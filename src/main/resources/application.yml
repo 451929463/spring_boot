@@ -1,0 +1,29 @@
+server:
+  port: 8887
+---
+server:
+  port: 8886
+spring:
+  profiles: test
+---
+server:
+  port: 9090
+spring:
+  profiles: dev
+student:
+  email: 123123123@qq.com
+  name: ${stu.user.value}
+  sex: true
+  birthday: 2019/02/02
+  hobbys: [游泳 , 打球]
+   # - 游泳
+   # - 打球
+  merits: [编程 , 金融]
+    #- 编程
+    #- 金融
+  address: {city: "武\n汉" , county: '洪山区'}
+    #{city: 武汉 , county: 洪山区}
+    #city: 武汉
+    #county: 洪山区
+  location:
+    - cc: aa
